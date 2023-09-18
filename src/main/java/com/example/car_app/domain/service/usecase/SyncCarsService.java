@@ -40,7 +40,6 @@ public class SyncCarsService implements SyncCarsApi {
                 } catch (InsufficientFundsException e) {
                     log.info("User {} cannot buy car {}: Insufficient funds", user.getEmail(), carToBuy.getName());
                 }
-
                 availableCars.remove(0);
             }
         }

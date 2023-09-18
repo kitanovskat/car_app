@@ -31,8 +31,6 @@ public enum CarBrand {
                 int yearsOverOne = age - 1;
                 depreciationRate = 0.10 * yearsOverOne;
             } else {
-                // Car is more than 5 years old
-                // Set a fixed depreciation rate
                 depreciationRate = 0.50;
             }
         }
